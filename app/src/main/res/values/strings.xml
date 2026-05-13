@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DoNext</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="no_account">Don\'t have an account? Sign Up</string>
+    <string name="create_account">Create Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="have_account">Already have an account? Sign In</string>
+    <string name="tasks">Tasks</string>
+    <string name="add_todo">Add To Do</string>
+    <string name="add_task_hint">Add a Task</string>
+    <string name="my_profile">My Profile</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="save">Save</string>
+    <string name="sign_out_confirm">Do you really want to sign out?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="about">About</string>
+    <string name="nav_tasks">Tasks</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_about">About</string>
+    <string name="version">Version 1.0.0.0</string>
+    <string name="dev_id">2023T01845</string>
+    <string name="dev_name">L.L.W.G. Alwis</string>
+    <string name="dev_bio">A Dedicated ICT undergraduate passionate about building intuitive and user-friendly mobile applications.</string>
+    <string name="task_added">Task added!</string>
+    <string name="task_updated">Task updated!</string>
+    <string name="task_deleted">Task deleted!</string>
+    <string name="enter_task">Please enter a task</string>
+    <string name="fill_all_fields">Please fill in all fields</string>
+    <string name="passwords_not_match">Passwords do not match</string>
+    <string name="login_success">Login successful!</string>
+    <string name="invalid_credentials">Invalid username or password</string>
+    <string name="signup_success">Account created! Please login.</string>
+    <string name="username_taken">Username already taken</string>
+</resources>

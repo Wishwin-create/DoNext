@@ -1,0 +1,202 @@
+[
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_bg_nav_bar.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\bg_nav_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "com.donext.app-debug-31:/layout_activity_signup.xml.flat",
+        "source": "com.donext.app-main-33:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\layout_activity_tasks.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\layout\\activity_tasks.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_ic_profile.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\ic_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_bg_checkbox.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\bg_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\layout_dialog_add_task.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\layout\\dialog_add_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_ic_camera.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\ic_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_bg_button_purple.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\bg_button_purple.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\ic_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_ic_about.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\ic_about.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_bg_profile_image.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\bg_profile_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_logo_bg.png.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\logo_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_bg_input_rounded.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\bg_input_rounded.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\layout_activity_about.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\layout\\activity_about.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_bg_task_item.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\bg_task_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_bg_input_field.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\bg_input_field.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_ic_tasks.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\ic_tasks.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_dev_image.jpeg.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\dev_image.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_bg_nav_selected.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\bg_nav_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\layout_item_task.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\layout\\item_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\ic_close.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\layout_dialog_edit_profile.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\layout\\dialog_edit_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_black_cursor.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\black_cursor.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_ic_default_avatar.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\ic_default_avatar.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_ic_back.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\ic_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_bg_pill_outline.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\bg_pill_outline.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\layout_dialog_sign_out.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\layout\\dialog_sign_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\layout_dialog_delete_task.xml.flat",
+        "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\layout\\dialog_delete_task.xml"
+    }
+]

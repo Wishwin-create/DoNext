@@ -1,0 +1,170 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.donext.app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- For Android 13+ -->
+12    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+12-->D:\DoNextApp\app\src\main\AndroidManifest.xml:6:5-76
+12-->D:\DoNextApp\app\src\main\AndroidManifest.xml:6:22-73
+13    <!-- For Android 12 and below -->
+14    <uses-permission
+14-->D:\DoNextApp\app\src\main\AndroidManifest.xml:8:5-9:38
+15        android:name="android.permission.READ_EXTERNAL_STORAGE"
+15-->D:\DoNextApp\app\src\main\AndroidManifest.xml:8:22-77
+16        android:maxSdkVersion="32" />
+16-->D:\DoNextApp\app\src\main\AndroidManifest.xml:9:9-35
+17
+18    <permission
+18-->[androidx.core:core:1.9.0] C:\Users\gesar\.gradle\caches\8.13\transforms\00eeb73d329f60914ee7cf1a9183d8d3\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+19        android:name="com.donext.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+19-->[androidx.core:core:1.9.0] C:\Users\gesar\.gradle\caches\8.13\transforms\00eeb73d329f60914ee7cf1a9183d8d3\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+20        android:protectionLevel="signature" />
+20-->[androidx.core:core:1.9.0] C:\Users\gesar\.gradle\caches\8.13\transforms\00eeb73d329f60914ee7cf1a9183d8d3\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+21
+22    <uses-permission android:name="com.donext.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+22-->[androidx.core:core:1.9.0] C:\Users\gesar\.gradle\caches\8.13\transforms\00eeb73d329f60914ee7cf1a9183d8d3\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+22-->[androidx.core:core:1.9.0] C:\Users\gesar\.gradle\caches\8.13\transforms\00eeb73d329f60914ee7cf1a9183d8d3\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+23
+24    <application
+24-->D:\DoNextApp\app\src\main\AndroidManifest.xml:11:5-35:19
+25        android:allowBackup="true"
+25-->D:\DoNextApp\app\src\main\AndroidManifest.xml:12:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.9.0] C:\Users\gesar\.gradle\caches\8.13\transforms\00eeb73d329f60914ee7cf1a9183d8d3\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+27        android:debuggable="true"
+28        android:extractNativeLibs="false"
+29        android:icon="@mipmap/ic_launcher"
+29-->D:\DoNextApp\app\src\main\AndroidManifest.xml:13:9-43
+30        android:label="@string/app_name"
+30-->D:\DoNextApp\app\src\main\AndroidManifest.xml:14:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->D:\DoNextApp\app\src\main\AndroidManifest.xml:15:9-54
+32        android:supportsRtl="true"
+32-->D:\DoNextApp\app\src\main\AndroidManifest.xml:16:9-35
+33        android:testOnly="true"
+34        android:theme="@style/Theme.DoNext" >
+34-->D:\DoNextApp\app\src\main\AndroidManifest.xml:17:9-44
+35        <activity
+35-->D:\DoNextApp\app\src\main\AndroidManifest.xml:19:9-27:20
+36            android:name="com.donext.app.activities.SplashActivity"
+36-->D:\DoNextApp\app\src\main\AndroidManifest.xml:20:13-54
+37            android:exported="true"
+37-->D:\DoNextApp\app\src\main\AndroidManifest.xml:21:13-36
+38            android:theme="@style/Theme.DoNext.Splash" >
+38-->D:\DoNextApp\app\src\main\AndroidManifest.xml:22:13-55
+39            <intent-filter>
+39-->D:\DoNextApp\app\src\main\AndroidManifest.xml:23:13-26:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->D:\DoNextApp\app\src\main\AndroidManifest.xml:24:17-69
+40-->D:\DoNextApp\app\src\main\AndroidManifest.xml:24:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->D:\DoNextApp\app\src\main\AndroidManifest.xml:25:17-77
+42-->D:\DoNextApp\app\src\main\AndroidManifest.xml:25:27-74
+43            </intent-filter>
+44        </activity>
+45        <activity
+45-->D:\DoNextApp\app\src\main\AndroidManifest.xml:29:9-86
+46            android:name="com.donext.app.activities.LoginActivity"
+46-->D:\DoNextApp\app\src\main\AndroidManifest.xml:29:19-59
+47            android:exported="false" />
+47-->D:\DoNextApp\app\src\main\AndroidManifest.xml:29:60-84
+48        <activity
+48-->D:\DoNextApp\app\src\main\AndroidManifest.xml:30:9-87
+49            android:name="com.donext.app.activities.SignupActivity"
+49-->D:\DoNextApp\app\src\main\AndroidManifest.xml:30:19-60
+50            android:exported="false" />
+50-->D:\DoNextApp\app\src\main\AndroidManifest.xml:30:61-85
+51        <activity
+51-->D:\DoNextApp\app\src\main\AndroidManifest.xml:31:9-86
+52            android:name="com.donext.app.activities.TasksActivity"
+52-->D:\DoNextApp\app\src\main\AndroidManifest.xml:31:19-59
+53            android:exported="false" />
+53-->D:\DoNextApp\app\src\main\AndroidManifest.xml:31:60-84
+54        <activity
+54-->D:\DoNextApp\app\src\main\AndroidManifest.xml:32:9-88
+55            android:name="com.donext.app.activities.ProfileActivity"
+55-->D:\DoNextApp\app\src\main\AndroidManifest.xml:32:19-61
+56            android:exported="false" />
+56-->D:\DoNextApp\app\src\main\AndroidManifest.xml:32:62-86
+57        <activity
+57-->D:\DoNextApp\app\src\main\AndroidManifest.xml:33:9-86
+58            android:name="com.donext.app.activities.AboutActivity"
+58-->D:\DoNextApp\app\src\main\AndroidManifest.xml:33:19-59
+59            android:exported="false" />
+59-->D:\DoNextApp\app\src\main\AndroidManifest.xml:33:60-84
+60
+61        <provider
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gesar\.gradle\caches\8.13\transforms\e6824132ad21a51f5bd68e19997dca65\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+62            android:name="androidx.startup.InitializationProvider"
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gesar\.gradle\caches\8.13\transforms\e6824132ad21a51f5bd68e19997dca65\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+63            android:authorities="com.donext.app.androidx-startup"
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gesar\.gradle\caches\8.13\transforms\e6824132ad21a51f5bd68e19997dca65\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+64            android:exported="false" >
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gesar\.gradle\caches\8.13\transforms\e6824132ad21a51f5bd68e19997dca65\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+65            <meta-data
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gesar\.gradle\caches\8.13\transforms\e6824132ad21a51f5bd68e19997dca65\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gesar\.gradle\caches\8.13\transforms\e6824132ad21a51f5bd68e19997dca65\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+67                android:value="androidx.startup" />
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gesar\.gradle\caches\8.13\transforms\e6824132ad21a51f5bd68e19997dca65\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+68            <meta-data
+68-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\gesar\.gradle\caches\8.13\transforms\9847b446801a5990c766dd1de70e77c0\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+69-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\gesar\.gradle\caches\8.13\transforms\9847b446801a5990c766dd1de70e77c0\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+70                android:value="androidx.startup" />
+70-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\gesar\.gradle\caches\8.13\transforms\9847b446801a5990c766dd1de70e77c0\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+73                android:value="androidx.startup" />
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+74        </provider>
+75
+76        <receiver
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+77            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+78            android:directBootAware="false"
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+79            android:enabled="true"
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+80            android:exported="true"
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+81            android:permission="android.permission.DUMP" >
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+83                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+84            </intent-filter>
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+86                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+89                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+92                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\gesar\.gradle\caches\8.13\transforms\f31e9d1da53ef96c37d73819271a7b63\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+93            </intent-filter>
+94        </receiver>
+95    </application>
+96
+97</manifest>

@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_bg_profile_image.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/bg_profile_image.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_bg_checkbox.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/bg_checkbox.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/layout_activity_login.xml.flat",
+        "source": "com.donext.app-main-33:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_ic_logo.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/ic_logo.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_ic_default_avatar.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/ic_default_avatar.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/layout_dialog_add_task.xml.flat",
+        "source": "com.donext.app-main-33:/layout/dialog_add_task.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_ic_delete.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/ic_delete.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/layout_activity_profile.xml.flat",
+        "source": "com.donext.app-main-33:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_ic_edit.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_bg_input_field.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/bg_input_field.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_bg_task_item.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/bg_task_item.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_ic_profile.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/ic_profile.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_ic_about.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/ic_about.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/layout_item_task.xml.flat",
+        "source": "com.donext.app-main-33:/layout/item_task.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/layout_activity_tasks.xml.flat",
+        "source": "com.donext.app-main-33:/layout/activity_tasks.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_ic_tasks.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/ic_tasks.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_bg_nav_selected.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/bg_nav_selected.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_ic_camera.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/ic_camera.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/layout_activity_signup.xml.flat",
+        "source": "com.donext.app-main-33:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_bg_button_purple.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/bg_button_purple.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_ic_back.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/layout_activity_splash.xml.flat",
+        "source": "com.donext.app-main-33:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.donext.app-merged_res-31:/drawable_bg_nav_bar.xml.flat",
+        "source": "com.donext.app-main-33:/drawable/bg_nav_bar.xml"
+    }
+]

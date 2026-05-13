@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#E6E0E9</color>
+    <color name="black">#000000</color>
+    <color name="ic_launcher_background">#E6E0E9</color>
+    <color name="input_bg">#D9D9D9</color>
+    <color name="purple_dark">#6A00F4</color>
+    <color name="purple_light">#E8DEF8</color>
+    <color name="purple_primary">#8A3AFF</color>
+    <color name="red_delete">#B00020</color>
+    <color name="surface">#F3EDF7</color>
+    <color name="text_dark">#44474E</color>
+    <color name="white">#FFFFFF</color>
+    <string name="about">About</string>
+    <string name="add_task_hint">Add a Task</string>
+    <string name="add_todo">Add To Do</string>
+    <string name="app_name">DoNext</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="dev_bio">A Dedicated ICT undergraduate passionate about building intuitive and user-friendly mobile applications.</string>
+    <string name="dev_id">2023T01845</string>
+    <string name="dev_name">L.L.W.G. Alwis</string>
+    <string name="email">Email</string>
+    <string name="enter_task">Please enter a task</string>
+    <string name="fill_all_fields">Please fill in all fields</string>
+    <string name="full_name">Full Name</string>
+    <string name="have_account">Already have an account? Sign In</string>
+    <string name="invalid_credentials">Invalid username or password</string>
+    <string name="login">Login</string>
+    <string name="login_success">Login successful!</string>
+    <string name="my_profile">My Profile</string>
+    <string name="nav_about">About</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_tasks">Tasks</string>
+    <string name="no">No</string>
+    <string name="no_account">Don\'t have an account? Sign Up</string>
+    <string name="password">Password</string>
+    <string name="passwords_not_match">Passwords do not match</string>
+    <string name="save">Save</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_out_confirm">Do you really want to sign out?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="signup_success">Account created! Please login.</string>
+    <string name="task_added">Task added!</string>
+    <string name="task_deleted">Task deleted!</string>
+    <string name="task_updated">Task updated!</string>
+    <string name="tasks">Tasks</string>
+    <string name="username">Username</string>
+    <string name="username_taken">Username already taken</string>
+    <string name="version">Version 1.0.0.0</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="yes">Yes</string>
+    <style name="CircleImage">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="InputField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/input_bg</item>
+        <item name="boxCornerRadiusTopStart">50dp</item>
+        <item name="boxCornerRadiusTopEnd">50dp</item>
+        <item name="boxCornerRadiusBottomStart">50dp</item>
+        <item name="boxCornerRadiusBottomEnd">50dp</item>
+        <item name="boxStrokeColor">@color/text_dark</item>
+        <item name="hintTextColor">@color/text_dark</item>
+        <item name="android:textColorHint">@color/text_dark</item>
+    </style>
+    <style name="OutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="strokeColor">@color/text_dark</item>
+        <item name="cornerRadius">50dp</item>
+        <item name="backgroundTint">@color/input_bg</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+    <style name="RoundedButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="backgroundTint">@color/purple_primary</item>
+        <item name="cornerRadius">50dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+    <style name="TaskItemStyle">
+        <item name="android:background">@drawable/bg_task_item</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <style name="Theme.DoNext" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryVariant">@color/purple_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple_light</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+    <style name="Theme.DoNext.Splash" parent="Theme.DoNext">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+</resources>

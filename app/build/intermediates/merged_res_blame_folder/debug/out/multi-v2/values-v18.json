@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.donext.app-mergeDebugResources-29:/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\gesar\\.gradle\\caches\\transforms-3\\92d0c5f27eb063633e1a5d7929cad4c3\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}
