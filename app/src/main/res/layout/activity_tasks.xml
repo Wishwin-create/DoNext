@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Main layout using RelativeLayout -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background">
 
     <!-- Tasks Title -->
-
-    <!-- Task List -->
-
-    <!-- Add To Do Button -->
 
     <TextView
         android:id="@+id/tvTasksTitle"
@@ -22,6 +19,7 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
+    <!-- Task List -->
     <ListView
         android:id="@+id/lvTasks"
         android:layout_width="match_parent"
@@ -35,7 +33,7 @@
         android:divider="@null"
         android:dividerHeight="8dp" />
 
-    <!-- Bottom Navigation Bar -->
+    <!-- Add To Do Button -->
 
     <Button
         android:id="@+id/btnAddTodo"
@@ -52,6 +50,8 @@
         android:textSize="16sp"
         android:visibility="visible" />
 
+    <!-- Bottom Navigation Bar -->
+
     <LinearLayout
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
@@ -61,7 +61,7 @@
         android:orientation="horizontal"
         android:weightSum="3">
 
-        <!-- Tasks Nav -->
+        <!-- Tasks Navigation -->
         <LinearLayout
             android:id="@+id/navTasks"
             android:layout_width="0dp"
@@ -73,10 +73,13 @@
             android:clickable="true"
             android:focusable="true">
 
+            <!-- Selected background container -->
             <FrameLayout
                 android:layout_width="64dp"
                 android:layout_height="32dp"
                 android:background="@drawable/bg_nav_selected">
+
+                <!-- Tasks icon -->
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
@@ -85,6 +88,7 @@
                     android:contentDescription="Tasks" />
             </FrameLayout>
 
+            <!-- Tasks text label -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -95,7 +99,7 @@
                 android:layout_marginTop="4dp" />
         </LinearLayout>
 
-        <!-- Profile Nav -->
+        <!-- Profile Navigation -->
         <LinearLayout
             android:id="@+id/navProfile"
             android:layout_width="0dp"
@@ -107,9 +111,11 @@
             android:clickable="true"
             android:focusable="true">
 
+            <!-- Icon container -->
             <FrameLayout
                 android:layout_width="64dp"
                 android:layout_height="32dp">
+                <!-- Profile icon -->
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
@@ -118,6 +124,7 @@
                     android:contentDescription="Profile" />
             </FrameLayout>
 
+            <!-- Profile text label -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -127,7 +134,7 @@
                 android:layout_marginTop="4dp" />
         </LinearLayout>
 
-        <!-- About Nav -->
+        <!-- About Navigation -->
         <LinearLayout
             android:id="@+id/navAbout"
             android:layout_width="0dp"
@@ -139,9 +146,12 @@
             android:clickable="true"
             android:focusable="true">
 
+
+            <!-- Icon container -->
             <FrameLayout
                 android:layout_width="64dp"
                 android:layout_height="32dp">
+                <!-- About icon -->
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
@@ -150,6 +160,7 @@
                     android:contentDescription="About" />
             </FrameLayout>
 
+            <!-- About text label -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

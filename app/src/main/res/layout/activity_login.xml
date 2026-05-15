@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Main screen layout using ConstraintLayout -->
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -19,6 +20,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- App name text -->
+
     <TextView
         android:id="@+id/tvLogo"
         android:layout_width="wrap_content"
@@ -31,6 +34,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+
+    <!-- Welcome text -->
 
     <TextView
         android:id="@+id/tvWelcome"
@@ -45,9 +50,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvLogo" />
 
-    <!-- Username -->
+    <!-- Username Input Field -->
 
-    <!-- Password -->
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="0dp"
@@ -64,6 +68,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+    <!-- Password Input Field -->
 
     <EditText
         android:id="@+id/etPassword"
@@ -84,7 +90,6 @@
 
     <!-- Login Button -->
 
-    <!-- Sign Up Link -->
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="0dp"
@@ -100,6 +105,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etPassword" />
+
+    <!-- Sign Up Text -->
 
     <TextView
         android:id="@+id/tvSignUp"

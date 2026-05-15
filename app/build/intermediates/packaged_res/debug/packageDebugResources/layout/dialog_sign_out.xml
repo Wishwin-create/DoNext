@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Sign out confirmation dialog card -->
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,19 +9,21 @@
     app:cardElevation="8dp"
     android:layout_margin="24dp">
 
+    <!-- Main container -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="20dp">
 
-        <!-- Title row -->
+        <!-- Header Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginBottom="16dp">
 
+            <!-- Close dialog button -->
             <ImageButton
                 android:id="@+id/btnCloseDialog"
                 android:layout_width="32dp"
@@ -31,6 +34,7 @@
                 android:layout_gravity="end"
                 android:contentDescription="Close"/>
 
+            <!-- Confirmation message -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,13 +47,15 @@
         </LinearLayout>
 
 
-        <!-- Buttons -->
+        <!-- Action Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="2">
 
+
+            <!-- Confirm sign out button -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnConfirmSignOut"
                 android:layout_width="0dp"
@@ -62,6 +68,7 @@
                 android:layout_marginEnd="8dp"
                 android:stateListAnimator="@null"/>
 
+            <!-- Cancel button -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCancelSignOut"
                 android:layout_width="0dp"

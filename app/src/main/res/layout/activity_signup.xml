@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Main layout using ConstraintLayout -->
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,6 +9,8 @@
     android:padding="24dp">
 
     <!-- Logo Section -->
+
+    <!-- App logo image -->
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="144dp"
@@ -19,6 +22,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- App name text -->
     <TextView
         android:id="@+id/tvLogo"
         android:layout_width="wrap_content"
@@ -32,17 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imgLogo" />
 
-    <!-- Username -->
-
-    <!-- Email -->
-
-    <!-- Password -->
-
-    <!-- Confirm Password -->
-
-    <!-- Sign Up Button -->
-
-    <!-- Sign In Link -->
+    <!-- Create Account Title -->
 
     <TextView
         android:id="@+id/tvCreateAccount"
@@ -56,6 +50,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvLogo" />
+
+    <!-- Username Input Field -->
 
     <EditText
         android:id="@+id/etUsername"
@@ -75,6 +71,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvCreateAccount" />
 
+    <!-- Email Input Field -->
+
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="0dp"
@@ -92,6 +90,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etUsername" />
+
+    <!-- Password Input Field -->
 
     <EditText
         android:id="@+id/etPassword"
@@ -111,6 +111,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etEmail" />
 
+    <!-- Confirm Password Field -->
+
     <EditText
         android:id="@+id/etConfirmPassword"
         android:layout_width="0dp"
@@ -129,6 +131,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etPassword" />
 
+    <!-- Sign Up Button -->
+
     <Button
         android:id="@+id/btnSignUp"
         android:layout_width="0dp"
@@ -144,6 +148,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etConfirmPassword" />
+
+    <!-- Sign In Text -->
 
     <TextView
         android:id="@+id/tvSignIn"

@@ -19,6 +19,12 @@ import com.donext.app.models.Task;
 
 import java.util.List;
 
+
+/**
+ * TaskAdapter
+ * Custom adapter for displaying tasks in ListView
+ * Handles: view binding, edit, delete, and completion toggle
+ */
 public class TaskAdapter extends ArrayAdapter<Task> {
 
     private final Context context;
@@ -34,20 +40,23 @@ public class TaskAdapter extends ArrayAdapter<Task> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        // Reuse view if available
         if (convertView == null) {
             convertView = LayoutInflater.from(context).inflate(R.layout.item_task, parent, false);
         }
 
         Task task = tasks.get(position);
 
+        // Bind UI elements
         CheckBox cbTask = convertView.findViewById(R.id.cbTask);
         TextView tvTaskTitle = convertView.findViewById(R.id.tvTaskTitle);
         TextView tvTaskDateTime = convertView.findViewById(R.id.tvTaskDateTime);
         ImageButton btnEdit = convertView.findViewById(R.id.btnEdit);
         ImageButton btnDelete = convertView.findViewById(R.id.btnDelete);
 
+        // Set task title
         tvTaskTitle.setText(task.getTitle());
-        // Show date and time below title ← new
+        // Show date and time below title if available
         if (task.getDate() != null && task.getTime() != null) {
             tvTaskDateTime.setText(task.getDate() + "  •  " + task.getTime());
             tvTaskDateTime.setVisibility(View.VISIBLE);
@@ -55,27 +64,31 @@ public class TaskAdapter extends ArrayAdapter<Task> {
             tvTaskDateTime.setVisibility(View.GONE);
         }
 
+        // Prevent checkbox recycling issues
         cbTask.setOnCheckedChangeListener(null);
         cbTask.setChecked(task.isCompleted());
 
-        // Strike-through if completed
+        // Apply strike-through if completed
         applyStrikeThrough(tvTaskTitle, task.isCompleted());
 
-        // Checkbox toggle
+        // Toggle task completion
         cbTask.setOnCheckedChangeListener((buttonView, isChecked) -> {
             task.setCompleted(isChecked);
             dbHelper.updateTask(task);
             applyStrikeThrough(tvTaskTitle, isChecked);
         });
-        // Edit button
+        // Edit task
         btnEdit.setOnClickListener(v -> showEditDialog(position, task));
 
-        // Delete button
+        // Delete task
         btnDelete.setOnClickListener(v -> showDeleteDialog(task));
 
         return convertView;
     }
 
+    /**
+     * Opens edit dialog for updating task
+     */
      private void showEditDialog(int position, Task task) {
         View dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_add_task, null);
         EditText etTitle = dialogView.findViewById(R.id.etTaskTitle);
@@ -84,7 +97,10 @@ public class TaskAdapter extends ArrayAdapter<Task> {
         ImageButton btnClose = dialogView.findViewById(R.id.btnCloseDialog);
         TextView tvDialogTitle = dialogView.findViewById(R.id.tvDialogTitle);
 
+         // Set dialog title
         tvDialogTitle.setText("Edit Your Task");
+
+         // Pre-fill task data
         etTitle.setText(task.getTitle());
         etTitle.setSelection(task.getTitle().length());
 
@@ -134,13 +150,15 @@ public class TaskAdapter extends ArrayAdapter<Task> {
                 .setView(dialogView)
                 .create();
 
-        // Make dialog background transparent so CardView corners show
+        // Make rounded dialog background visible
         if (dialog.getWindow() != null) {
             dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         }
 
+         // Close button
         btnClose.setOnClickListener(v -> dialog.dismiss());
 
+         // Save updates
         dialogView.findViewById(R.id.btnSaveTask).setOnClickListener(v -> {
             String newTitle = etTitle.getText().toString().trim();
             if (newTitle.isEmpty()) {
@@ -158,12 +176,16 @@ public class TaskAdapter extends ArrayAdapter<Task> {
         });
 
 
-
+        // Cancel edit
         dialogView.findViewById(R.id.btnCancel).setOnClickListener(v -> dialog.dismiss());
         dialog.show();
 
 
     }
+
+    /**
+     * Shows delete confirmation dialog
+     */
 
         private void showDeleteDialog(Task task) {
             View dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_delete_task, null);
@@ -191,7 +213,9 @@ public class TaskAdapter extends ArrayAdapter<Task> {
             dialog.show();
         }
 
-        // Reusable helper — used on bind and in checkbox listener
+    /**
+     * Adds/removes strike-through effect
+     */
         private void applyStrikeThrough(TextView tv, boolean completed) {
             if (completed) {
                 tv.setPaintFlags(tv.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);

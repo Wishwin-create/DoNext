@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- CardView used as a dialog container -->
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,7 +9,7 @@
     app:cardElevation="8dp"
     android:layout_margin="24dp"
   >
-
+    <!-- Main container inside card -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +23,7 @@
             android:orientation="vertical"
             android:layout_marginBottom="16dp">
 
-            <!-- Close button (top right) -->
+            <!-- Close button (top-right corner) -->
             <ImageButton
                 android:id="@+id/btnCloseDialog"
                 android:layout_width="32dp"
@@ -33,7 +34,7 @@
                 android:layout_gravity="end"
                 android:contentDescription="Close"/>
 
-            <!-- Title below -->
+            <!-- Dialog title -->
             <TextView
                 android:id="@+id/tvDialogTitle"
                 android:layout_width="wrap_content"
@@ -46,7 +47,7 @@
 
         </LinearLayout>
 
-        <!-- Task input -->
+        <!-- Task Input Field -->
         <EditText
             android:id="@+id/etTaskTitle"
             android:layout_width="match_parent"
@@ -58,13 +59,14 @@
             android:background="@drawable/bg_input_field"
             android:layout_marginBottom="12dp"/>
 
-        <!-- Date and Time pills -->
+        <!-- Date & Time Selection -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginBottom="20dp">
 
+            <!-- Date picker field -->
             <TextView
                 android:id="@+id/tvDate"
                 android:layout_width="wrap_content"
@@ -81,6 +83,7 @@
                 android:paddingBottom="6dp"
                 android:layout_marginEnd="8dp"/>
 
+            <!-- Time picker field -->
             <TextView
                 android:id="@+id/tvTime"
                 android:layout_width="wrap_content"
@@ -98,13 +101,14 @@
 
         </LinearLayout>
 
-        <!-- Buttons -->
+        <!-- Action Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="2">
 
+            <!-- Save button -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnSaveTask"
                 android:layout_width="0dp"
@@ -117,6 +121,7 @@
                 android:layout_marginEnd="8dp"
                 android:stateListAnimator="@null"/>
 
+            <!-- Cancel button -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCancel"
                 android:layout_width="0dp"

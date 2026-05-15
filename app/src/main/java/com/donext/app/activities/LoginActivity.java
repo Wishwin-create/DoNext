@@ -22,6 +22,11 @@ import com.donext.app.database.SessionManager;
 import com.donext.app.models.User;
 import android.text.TextPaint;
 
+/**
+ * LoginActivity
+ * Handles user login and navigation to signup screen
+ */
+
 public class LoginActivity extends AppCompatActivity {
 
     private EditText etUsername, etPassword;
@@ -35,28 +40,38 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        // Initialize database and session manager
         dbHelper = new DatabaseHelper(this);
         sessionManager = new SessionManager(this);
 
+        // Bind UI elements
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         btnLogin = findViewById(R.id.btnLogin);
         tvSignUp = findViewById(R.id.tvSignUp);
 
+        // Setup clickable sign-up text
         setupSignUpLink();
 
+        // Login button click event
         btnLogin.setOnClickListener(v -> attemptLogin());
     }
 
+
+    /**
+     * Validates input and attempts login
+     */
     private void attemptLogin() {
         String username = etUsername.getText().toString().trim();
         String password = etPassword.getText().toString().trim();
 
+        // Validate empty fields
         if (username.isEmpty() || password.isEmpty()) {
             Toast.makeText(this, getString(R.string.fill_all_fields), Toast.LENGTH_SHORT).show();
             return;
         }
 
+        // Check credentials in database
         User user = dbHelper.loginUser(username, password);
         if (user != null) {
             sessionManager.createLoginSession(user.getId(), user.getUsername(), user.getEmail());
@@ -68,6 +83,9 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Makes "Sign Up" text clickable and styled
+     */
     private void setupSignUpLink() {
         String fullText = getString(R.string.no_account);
         SpannableString spannable = new SpannableString(fullText);
@@ -94,7 +112,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void updateDrawState(TextPaint ds) {
                 super.updateDrawState(ds);
-                ds.setUnderlineText(false); // removes underline
+                ds.setUnderlineText(false); // remove underline
             }
         }, signUpStart, signUpEnd, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 

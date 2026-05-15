@@ -1,16 +1,32 @@
 package com.donext.app.models;
-
+/**
+ * Task model class represents a single to-do task in the system.
+ * It stores task details such as title, completion status, owner,
+ * and scheduled date & time.
+ */
 public class Task {
+    // Unique task ID (primary key in database)
     private int id;
-    private String title;
-    private boolean isCompleted;
-    private String username; // owner
 
+    // Task title
+    private String title;
+
+    // Completion status (true = completed, false = pending)
+    private boolean isCompleted;
+
+    // Username of the task owner
+    private String username;
+
+    // Scheduled date of the task
     private String date;
+
+    // Scheduled time of the task
     private String time;
 
+    //Default constructor
     public Task() {}
 
+    //Parameterized constructor to initialize all task fields
     public Task(int id, String title, boolean isCompleted, String username, String date, String time) {
         this.id = id;
         this.title = title;
@@ -21,6 +37,7 @@ public class Task {
 
     }
 
+    // ================= GETTERS AND SETTERS =================//
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 

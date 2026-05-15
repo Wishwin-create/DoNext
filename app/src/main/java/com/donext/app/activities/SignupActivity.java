@@ -21,6 +21,11 @@ import com.donext.app.R;
 import com.donext.app.database.DatabaseHelper;
 import com.donext.app.models.User;
 
+/**
+ * SignupActivity
+ * Handles user registration and navigation to login screen
+ */
+
 public class SignupActivity extends AppCompatActivity {
 
     private EditText  etUsername, etEmail, etPassword, etConfirmPassword;
@@ -33,9 +38,12 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
+        // Initialize database helper
         dbHelper = new DatabaseHelper(this);
 
 
+
+        // Bind UI elements
         etUsername = findViewById(R.id.etUsername);
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
@@ -43,10 +51,16 @@ public class SignupActivity extends AppCompatActivity {
         btnSignUp = findViewById(R.id.btnSignUp);
         tvSignIn = findViewById(R.id.tvSignIn);
 
+        // Setup clickable sign-in text
         setupSignInLink();
 
+        // Sign up button click
         btnSignUp.setOnClickListener(v -> attemptSignup());
     }
+
+    /**
+     * Validates input and registers user
+     */
 
     private void attemptSignup() {
 
@@ -55,26 +69,32 @@ public class SignupActivity extends AppCompatActivity {
         String password = etPassword.getText().toString().trim();
         String confirmPassword = etConfirmPassword.getText().toString().trim();
 
+        // Check empty fields
         if ( username.isEmpty() || email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
             Toast.makeText(this, getString(R.string.fill_all_fields), Toast.LENGTH_SHORT).show();
             return;
         }
 
+        // Check password match
         if (!password.equals(confirmPassword)) {
             Toast.makeText(this, getString(R.string.passwords_not_match), Toast.LENGTH_SHORT).show();
             return;
         }
 
+        // Check username availability
         if (dbHelper.isUsernameTaken(username)) {
             Toast.makeText(this, getString(R.string.username_taken), Toast.LENGTH_SHORT).show();
             return;
         }
 
+        // Create new user
         User newUser = new User(username, email, password);
+        // Register user in DB
         boolean success = dbHelper.registerUser(newUser);
 
         if (success) {
             Toast.makeText(this, getString(R.string.signup_success), Toast.LENGTH_LONG).show();
+            // Go to login screen
             startActivity(new Intent(this, LoginActivity.class));
             finish();
         } else {
@@ -82,6 +102,10 @@ public class SignupActivity extends AppCompatActivity {
         }
     }
 
+
+    /**
+     * Makes "Sign In" clickable text
+     */
     private void setupSignInLink() {
         String fullText = getString(R.string.have_account);
         SpannableString spannable = new SpannableString(fullText);
@@ -89,7 +113,7 @@ public class SignupActivity extends AppCompatActivity {
         int signInStart = fullText.indexOf("Sign In");
         int signInEnd = signInStart + "Sign In".length();
 
-        // "Already have an account? " → purple
+        // "Already have an account? "
         spannable.setSpan(new ForegroundColorSpan(
                         ContextCompat.getColor(this, R.color.purple_primary)),
                 0, signInStart, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);

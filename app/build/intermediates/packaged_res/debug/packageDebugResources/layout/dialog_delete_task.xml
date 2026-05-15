@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Confirmation dialog card -->
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,20 +9,21 @@
     app:cardElevation="8dp"
     android:layout_margin="24dp">
 
+    <!-- Main container -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="20dp">
 
-        <!-- Title row -->
+        <!-- Header Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginBottom="16dp">
 
-            <!-- Close button (top right) -->
+            <!-- Close dialog button -->
             <ImageButton
                 android:id="@+id/btnCloseDialog"
                 android:layout_width="32dp"
@@ -33,7 +35,7 @@
                 android:contentDescription="Close"
                 app:tint="#E53935" />
 
-            <!-- Title below -->
+            <!-- Confirmation message -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -45,13 +47,14 @@
 
         </LinearLayout>
 
-        <!-- Buttons -->
+        <!-- Action Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="2">
 
+            <!-- Delete confirmation button -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnConfirmDelete"
                 android:layout_width="0dp"
@@ -63,6 +66,8 @@
                 app:cornerRadius="24dp"
                 android:layout_marginEnd="8dp"
                 android:stateListAnimator="@null"/>
+
+            <!-- Cancel button -->
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCancelDelete"

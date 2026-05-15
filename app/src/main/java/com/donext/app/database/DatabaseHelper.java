@@ -12,8 +12,13 @@ import com.donext.app.models.User;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DatabaseHelper extends SQLiteOpenHelper {
+/**
+ * DatabaseHelper manages all SQLite database operations
+ * including user management and task management.
+ */
 
+public class DatabaseHelper extends SQLiteOpenHelper {
+    // Database name and version
     private static final String DATABASE_NAME = "donext.db";
     private static final int DATABASE_VERSION = 2;
 
@@ -33,19 +38,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COL_TASK_DATE = "date";
     private static final String COL_TASK_TIME = "time";
 
-
+   //Constructor - initializes database helper
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
-
+     // Creates database tables when app is first installed
     @Override
     public void onCreate(SQLiteDatabase db) {
+        // Create Users table
         db.execSQL("CREATE TABLE " + TABLE_USERS + " (" +
                 COL_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COL_USERNAME + " TEXT UNIQUE, " +
                 COL_EMAIL + " TEXT, " +
                 COL_PASSWORD + " TEXT)");
 
+        // Create Tasks table
         db.execSQL("CREATE TABLE " + TABLE_TASKS + " (" +
                 COL_TASK_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COL_TASK_TITLE + " TEXT, " +
@@ -55,6 +62,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 COL_TASK_TIME + " TEXT)");
     }
 
+
+    //Handles database upgrades (drops and recreates tables)
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_USERS);
@@ -62,7 +71,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    // =================== USER OPERATIONS ===================
+
+    // =================== USER OPERATIONS ===================//
+
+    // Registers a new user in the database
 
     public boolean registerUser(User user) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -75,6 +87,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return result != -1;
     }
 
+
+    //Validates user login credentials
     public User loginUser(String username, String password) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(TABLE_USERS,
@@ -98,6 +112,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return null;
     }
 
+    //Checks if username already exists
     public boolean isUsernameTaken(String username) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(TABLE_USERS, null,
@@ -109,6 +124,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return exists;
     }
 
+    //Retrieves user details using username
     public User getUserByUsername(String username) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(TABLE_USERS, null,
@@ -130,7 +146,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return null;
     }
 
-    // =================== TASK OPERATIONS ===================
+    // =================== TASK OPERATIONS ===================//
+
+    // Adds a new task to the database
 
     public long addTask(Task task) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -145,6 +163,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return id;
     }
 
+    // Retrieves tasks for a specific user
     public List<Task> getTasksForUser(String username) {
         List<Task> tasks = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
@@ -169,6 +188,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return tasks;
     }
 
+    //Updates a task in the database(title, status, date, time)
     public boolean updateTask(Task task) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -182,6 +202,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return rows > 0;
     }
 
+    // Deletes a task from database
     public boolean deleteTask(int taskId) {
         SQLiteDatabase db = this.getWritableDatabase();
         int rows = db.delete(TABLE_TASKS,
@@ -190,6 +211,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return rows > 0;
     }
 
+    //Updates user profile (username + email)
     public boolean updateUserProfile(int userId, String newUsername, String newEmail) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -201,7 +223,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return rows > 0;
     }
 
-    // ← NEW: updates tasks to use the new username after profile edit
+    // updates tasks to use the new username after profile edit
     public void updateTasksUsername(String oldUsername, String newUsername) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();

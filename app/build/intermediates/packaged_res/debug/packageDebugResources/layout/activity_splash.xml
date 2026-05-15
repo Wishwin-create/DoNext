@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Main layout using RelativeLayout -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background">
+
+    <!-- Container to align logo and text vertically -->
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -11,6 +15,8 @@
         android:orientation="vertical"
         android:gravity="center">
 
+
+        <!-- App logo image -->
         <ImageView
             android:id="@+id/imgLogo"
             android:layout_width="288dp"
@@ -18,6 +24,7 @@
             android:src="@drawable/logo_bg"
             android:contentDescription="DoNext Logo" />
 
+        <!-- App name text -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

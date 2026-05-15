@@ -4,6 +4,10 @@
         "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "com.donext.app-debug-31:/layout_dialog_delete_task.xml.flat",
+        "source": "com.donext.app-main-33:/layout/dialog_delete_task.xml"
+    },
+    {
         "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_bg_nav_bar.xml.flat",
         "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\bg_nav_bar.xml"
     },
@@ -46,6 +50,10 @@
     {
         "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_ic_profile.xml.flat",
         "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\ic_profile.xml"
+    },
+    {
+        "merged": "com.donext.app-debug-31:/layout_dialog_edit_profile.xml.flat",
+        "source": "com.donext.app-main-33:/layout/dialog_edit_profile.xml"
     },
     {
         "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_bg_checkbox.xml.flat",
@@ -96,8 +104,16 @@
         "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\bg_input_rounded.xml"
     },
     {
+        "merged": "com.donext.app-debug-31:/layout_activity_about.xml.flat",
+        "source": "com.donext.app-main-33:/layout/activity_about.xml"
+    },
+    {
         "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\layout_activity_about.xml.flat",
         "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\layout\\activity_about.xml"
+    },
+    {
+        "merged": "com.donext.app-debug-31:/layout_dialog_add_task.xml.flat",
+        "source": "com.donext.app-main-33:/layout/dialog_add_task.xml"
     },
     {
         "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
@@ -118,6 +134,10 @@
     {
         "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_bg_input_field.xml.flat",
         "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\bg_input_field.xml"
+    },
+    {
+        "merged": "com.donext.app-debug-31:/layout_activity_tasks.xml.flat",
+        "source": "com.donext.app-main-33:/layout/activity_tasks.xml"
     },
     {
         "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\drawable_ic_tasks.xml.flat",
@@ -184,6 +204,10 @@
         "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\drawable\\bg_pill_outline.xml"
     },
     {
+        "merged": "com.donext.app-debug-31:/layout_item_task.xml.flat",
+        "source": "com.donext.app-main-33:/layout/item_task.xml"
+    },
+    {
         "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-mdpi\\ic_launcher_foreground.webp"
     },
@@ -192,8 +216,20 @@
         "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\layout\\dialog_sign_out.xml"
     },
     {
+        "merged": "com.donext.app-debug-31:/layout_activity_login.xml.flat",
+        "source": "com.donext.app-main-33:/layout/activity_login.xml"
+    },
+    {
         "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-main-33:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.donext.app-debug-31:/layout_activity_splash.xml.flat",
+        "source": "com.donext.app-main-33:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.donext.app-debug-31:/layout_dialog_sign_out.xml.flat",
+        "source": "com.donext.app-main-33:/layout/dialog_sign_out.xml"
     },
     {
         "merged": "C:\\Users\\gesar\\.gradle\\daemon\\8.13\\com.donext.app-debug-31:\\layout_dialog_delete_task.xml.flat",

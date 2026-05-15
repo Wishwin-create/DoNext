@@ -22,6 +22,11 @@ import com.donext.app.models.Task;
 
 import java.util.List;
 
+/**
+ * TasksActivity
+ * Main screen that displays user tasks and allows adding new tasks
+ */
+
 public class TasksActivity extends AppCompatActivity {
 
     private ListView lvTasks;
@@ -38,26 +43,32 @@ public class TasksActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tasks);
 
+        // Initialize helpers
         dbHelper = new DatabaseHelper(this);
         sessionManager = new SessionManager(this);
 
+        // Redirect if not logged in
         if (!sessionManager.isLoggedIn()) {
             startActivity(new Intent(this, LoginActivity.class));
             finish();
             return;
         }
 
+        // Bind UI
         lvTasks = findViewById(R.id.lvTasks);
         btnAddTodo = findViewById(R.id.btnAddTodo);
         navTasks = findViewById(R.id.navTasks);
         navProfile = findViewById(R.id.navProfile);
         navAbout = findViewById(R.id.navAbout);
 
+        // Load tasks
+
         loadTasks();
 
+        // Add task button
         btnAddTodo.setOnClickListener(v -> showAddTaskDialog());
 
-        // Nav listeners
+        // Navigation
         navTasks.setOnClickListener(v -> { /* Already here */ });
         navProfile.setOnClickListener(v -> {
             startActivity(new Intent(this, ProfileActivity.class));
@@ -73,6 +84,9 @@ public class TasksActivity extends AppCompatActivity {
         loadTasks();
     }
 
+    /**
+     * Loads tasks from database for current user
+     */
     private void loadTasks() {
         String username = sessionManager.getUsername();
         taskList = dbHelper.getTasksForUser(username);
@@ -82,6 +96,9 @@ public class TasksActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * Opens dialog to add a new task
+     */
     private void showAddTaskDialog() {
         View dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_add_task, null);
         EditText etTitle = dialogView.findViewById(R.id.etTaskTitle);
@@ -96,7 +113,7 @@ public class TasksActivity extends AppCompatActivity {
         
         if (tvDate != null) tvDate.setText(defaultDate);
         if (tvTime != null) tvTime.setText(defaultTime);
-
+        // Date picker
         if(tvDate != null) {
             tvDate.setOnClickListener(v -> {
                 java.util.Calendar c = java.util.Calendar.getInstance();
@@ -114,7 +131,7 @@ public class TasksActivity extends AppCompatActivity {
                 ).show();
             });
         }
-
+        // Time picker
         if(tvTime != null) {
                    tvTime.setOnClickListener(v -> {
                        java.util.Calendar c = java.util.Calendar.getInstance();
@@ -136,20 +153,22 @@ public class TasksActivity extends AppCompatActivity {
                }
 
 
-
+        // Create dialog
         AlertDialog dialog = new AlertDialog.Builder(this)
                         .setView(dialogView)
                         .create();
 
-                // Make CardView corners visible
+                // Transparent background for rounded dialog
                 if (dialog.getWindow() != null) {
                     dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
                 }
 
+                // Close button
                 if (btnClose != null) {
                     btnClose.setOnClickListener(v -> dialog.dismiss());
                 }
 
+                // Save task
                 dialogView.findViewById(R.id.btnSaveTask).setOnClickListener(v -> {
                     String title = etTitle.getText().toString().trim();
                     if (title.isEmpty()) {
@@ -169,6 +188,7 @@ public class TasksActivity extends AppCompatActivity {
                     dialog.dismiss();
                 });
 
+                // Cancel button
                 dialogView.findViewById(R.id.btnCancel).setOnClickListener(v -> dialog.dismiss());
                 dialog.show();
 
