@@ -1,67 +1,65 @@
-DoNext 
+DoNext - Get Things Done
 
-A clean, purple-themed Android to-do and task management app built with Java in Android Studio.
+DoNext is a clean and modern Android task management application designed to help users organize daily activities, manage schedules, and improve productivity with a smooth and user-friendly experience.
 
-📱 Developed as a course project for Mobile Application Development 
+🚀 Features
 
-✨ Features
+User Authentication – Secure Sign Up and Login system with session management using SharedPreferences.
+Task Management – Create, edit, delete, and manage tasks easily.
+Date & Time Scheduling – Built-in DatePickerDialog and TimePickerDialog for task scheduling.
+Priority Management – Organize tasks efficiently with task details and scheduling.
+Persistent Storage – User and task data stored locally using SQLite.
+Modern UI Design – Purple-themed interface using Material Design components.
+Multi-Screen Navigation – Includes Splash, Login, Signup, Home, Task, Profile, and About screens.
+Responsive Layouts – Clean layouts optimized for Android devices.
 
-User Authentication - Register and log in with secure session management via SharedPreferences
-Task Management - Create, edit, and delete tasks with a clean list interface
-Date & Time Picker - Native Android DatePickerDialog and TimePickerDialog for scheduling tasks
-Persistent Storage - All tasks and user data stored locally using SQLite
-Custom UI - Purple-themed design (#8A3AFF) with Material Components, rounded buttons, and a polished task list
-Multi-screen Navigation - Splash, Login, Signup, Tasks, Profile, and About screens
+🛠️ Built With
+
+Language: Java
+UI Framework: Android XML (Material Components)
+Database: SQLite
+IDE: Android Studio
+
+📱 Screenshots
+
+<img width="351" height="775" alt="image" src="https://github.com/user-attachments/assets/49225ab1-cfce-4e7e-8069-6fed4471ce48" />
+<img width="357" height="772" alt="image" src="https://github.com/user-attachments/assets/58ae1a92-f317-4b9c-a837-16221d0fc44a" />
+<img width="355" height="772" alt="image" src="https://github.com/user-attachments/assets/4916b00a-760d-4bc2-881b-f68c9b677161" />
+<img width="352" height="775" alt="image" src="https://github.com/user-attachments/assets/7bff09f3-d4a1-4352-97af-f52b506cb4f7" />
+<img width="356" height="780" alt="image" src="https://github.com/user-attachments/assets/3d01b2b9-afc7-4284-9616-5f204815807c" />
+<img width="360" height="782" alt="image" src="https://github.com/user-attachments/assets/8304073a-281b-409d-adf1-fb5e5372c1b4" />
 
 
-Android SDK (API 21+)
 
-Build Configuration
+
+
+⚙️ Build Configuration
+
 Android Gradle Plugin: 7.4.2
-Gradle Wrapper:        7.6
-Min SDK:               21
-Target SDK:            33
-
-
-
-
-
-
-Installation
-
-Clone the repository
-
-bash   git clone https://github.com/Wishwin-create/DoNext.git
-
-cd DoNext
-
-Open in Android Studio
-
-File → Open → select the DoNext folder
-
-
-Sync Gradle
-
-Let Android Studio sync the project dependencies
-
-
-Run the app
-
-Connect a device or start an emulator
-Click Run ▶ or press Shift + F10
+Gradle Version: 7.6
+Minimum SDK: 21
+Target SDK: 33
 
 🎨 Design
 
-The UI follows a consistent purple color scheme:
-ElementColorPrimary#8A3AFFBackground#FFFFFFAccent / Buttons#8A3AFF
-Original screen designs were created in Figma before implementation.
+The application follows a modern purple-themed UI design with Material Components.
+The UI was first designed in Figma before implementation in Android Studio.
 
+📚 Project Purpose
+
+This application was developed as a course project for:
+
+IC 2305 – Mobile Application Development (22/23)
+
+👷 Developer
+
+L.L.W.G. Alwis
+Student No: 2023T01845
+
+"Building simple and efficient mobile applications."
 
 📄 License
 
-This project is developed for educational purposes as part of the IC 2305 - Mobile Application Development (22/23) course.
+This project is developed for educational purposes under the Mobile Application Development course.
 
-👤 Author
-
-L.L.W.G. Alwis-2023T01845
-ICT Undergraduate — Mobile Application Development Course Project
+Version 1.0.0 - Stable Release
