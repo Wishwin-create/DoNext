@@ -2,7 +2,7 @@ DoNext
 
 A clean, purple-themed Android to-do and task management app built with Java in Android Studio.
 
-📱 Developed as a course project for Mobile Application Development (ICT undergraduate)
+📱 Developed as a course project for Mobile Application Development 
 
 ✨ Features
 
