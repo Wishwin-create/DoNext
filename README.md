@@ -24,6 +24,9 @@ Target SDK:            33
 
 
 
+
+
+
 Installation
 
 Clone the repository
@@ -48,6 +51,7 @@ Connect a device or start an emulator
 Click Run ▶ or press Shift + F10
 
 🎨 Design
+
 The UI follows a consistent purple color scheme:
 ElementColorPrimary#8A3AFFBackground#FFFFFFAccent / Buttons#8A3AFF
 Original screen designs were created in Figma before implementation.
