@@ -15,10 +15,10 @@ Responsive Layouts – Clean layouts optimized for Android devices.
 
 🛠️ Built With
 
-Language: Java
-UI Framework: Android XML (Material Components)
-Database: SQLite
-IDE: Android Studio
+Language: Java <br>
+UI Framework: Android XML (Material Components)<br>
+Database: SQLite<br>
+IDE: Android Studio<br>
 
 📱 Screenshots
 
