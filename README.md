@@ -35,10 +35,10 @@ IDE: Android Studio<br>
 
 ⚙️ Build Configuration<Br>
 
-Android Gradle Plugin: 7.4.2
-Gradle Version: 7.6
-Minimum SDK: 21
-Target SDK: 33
+Android Gradle Plugin: 7.4.2 <br>
+Gradle Version: 7.6<br>
+Minimum SDK: 21<br>
+Target SDK: 33<br>
 
 🎨 Design
 
