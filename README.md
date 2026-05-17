@@ -6,12 +6,12 @@ A clean, purple-themed Android to-do and task management app built with Java in 
 
 ✨ Features
 
-User Authentication — Register and log in with secure session management via SharedPreferences
-Task Management — Create, edit, and delete tasks with a clean list interface
-Date & Time Picker — Native Android DatePickerDialog and TimePickerDialog for scheduling tasks
-Persistent Storage — All tasks and user data stored locally using SQLite
-Custom UI — Purple-themed design (#8A3AFF) with Material Components, rounded buttons, and a polished task list
-Multi-screen Navigation — Splash, Login, Signup, Tasks, Profile, and About screens
+User Authentication - Register and log in with secure session management via SharedPreferences
+Task Management - Create, edit, and delete tasks with a clean list interface
+Date & Time Picker - Native Android DatePickerDialog and TimePickerDialog for scheduling tasks
+Persistent Storage - All tasks and user data stored locally using SQLite
+Custom UI - Purple-themed design (#8A3AFF) with Material Components, rounded buttons, and a polished task list
+Multi-screen Navigation - Splash, Login, Signup, Tasks, Profile, and About screens
 
 
 Android SDK (API 21+)
@@ -29,7 +29,8 @@ Installation
 Clone the repository
 
 bash   git clone https://github.com/Wishwin-create/DoNext.git
-   cd DoNext
+
+cd DoNext
 
 Open in Android Studio
 
