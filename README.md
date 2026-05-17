@@ -62,5 +62,6 @@ Original screen designs were created in Figma before implementation.
 This project is developed for educational purposes as part of the IC 2305 - Mobile Application Development (22/23) course.
 
 👤 Author
-L.L.W.G. Alwis
+
+L.L.W.G. Alwis-2023T01845
 ICT Undergraduate — Mobile Application Development Course Project
