@@ -4,16 +4,16 @@ DoNext is a clean and modern Android task management application designed to hel
 
 🚀 Features
 
-User Authentication – Secure Sign Up and Login system with session management using SharedPreferences.
-Task Management – Create, edit, delete, and manage tasks easily.
-Date & Time Scheduling – Built-in DatePickerDialog and TimePickerDialog for task scheduling.
-Priority Management – Organize tasks efficiently with task details and scheduling.
-Persistent Storage – User and task data stored locally using SQLite.
-Modern UI Design – Purple-themed interface using Material Design components.
-Multi-Screen Navigation – Includes Splash, Login, Signup, Home, Task, Profile, and About screens.
-Responsive Layouts – Clean layouts optimized for Android devices.
+User Authentication – Secure Sign Up and Login system with session management using SharedPreferences.<br>
+Task Management – Create, edit, delete, and manage tasks easily.<br>
+Date & Time Scheduling – Built-in DatePickerDialog and TimePickerDialog for task scheduling.<br>
+Priority Management – Organize tasks efficiently with task details and scheduling.<br>
+Persistent Storage – User and task data stored locally using SQLite.<br>
+Modern UI Design – Purple-themed interface using Material Design components.<br>
+Multi-Screen Navigation – Includes Splash, Login, Signup, Home, Task, Profile, and About screens.<br>
+Responsive Layouts – Clean layouts optimized for Android devices.<br>
 
-🛠️ Built With
+🛠️ Built With<Br>
 
 Language: Java <br>
 UI Framework: Android XML (Material Components)<br>
@@ -33,7 +33,7 @@ IDE: Android Studio<br>
 
 
 
-⚙️ Build Configuration
+⚙️ Build Configuration<Br>
 
 Android Gradle Plugin: 7.4.2
 Gradle Version: 7.6
