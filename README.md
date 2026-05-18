@@ -62,4 +62,4 @@ Student No: 2023T01845
 
 This project is developed for educational purposes under the Mobile Application Development course.
 
-Version 1.0.0 - Stable Release
+Version 1.0.0.0
